@@ -1,128 +1,148 @@
-*Evaluación Final — Módulo 2*
-**Base de Datos de Películas + Sakila**
+<h1 align="center">🎬 Proyecto de Data Analytics — Base de Datos de Películas</h1>
 
+<p align="center">
+  <img width="104" height="156" alt="Professional_code_RUTH SIN FONDO"
+       src="https://github.com/user-attachments/assets/ee5f7c67-1167-4098-aae1-2e215979c0cb" />
+</p>
 
-**Cómo ejecutar el proyecto**
-1. Clonar el repositorio
-git clone <>
-cd <nombre-del-repo>
+<p align="center"><strong>Evaluación realizada por RUTH PÉREZ SEGOVIA</strong><br>
+como parte del Bootcamp de Data Analytics — Adalab.</p>
 
-**Ejercicio 1 — API + Base de Datos**
-(En proceso — lo terminarás después, pero el README ya queda preparado)
+<p align="center">Cualquier comentario o mejora es bienvenida ✨</p>
 
-En este ejercicio se realizan las siguientes fases descritas en el enunciado:
-*Fase 1 — Extracción de datos desde API*
-  Se utiliza el endpoint oficial proporcionado por Adalab:
-https://beta.adalab.es/resources/apis/pelis/pelis.json
-  Se extraen 100 películas y se almacenan en un DataFrame.
-*Fase 2 — Creación de la base de datos*
-La base de datos se crea en MySQL, ya sea desde Workbench o mediante Python.
-La estructura contiene las columnas:
-    title
-    year
-    duration
-    genre
-    adult_content
-*Fase 3 — Inserción de dato*
-  Los datos limpiados se insertan en la tabla de MySQL.
-*Fase 4 — Consultas SQL*
-Se incluyen las respuestas a:
-    Películas con duración mayor a 120 min
-    Películas con subtítulos en español
-    Películas con contenido adulto
-    Película más antigua
-    Promedio de duración por género
-    Nº de películas por año
-    Año con más películas
-    Nº de películas por género
-    Películas cuyo título contenga una palabra concreta
+---
 
-Cuando termines el ejercicio 1, añadimos aquí tus consultas y capturas/resultados.
+## 🏷️ Badges
 
-**Ejercicio 2 — Base de Datos Sakila**
-
-Este ejercicio contiene todas las consultas solicitadas en el enunciado, utilizando la base de datos Sakila.
-Algunos ejemplos incluyen:
-  Selección de películas sin duplicados
-  Películas con clasificación PG-13
-  Películas que contienen una palabra en la descripción
-  Películas con duración mayor a 120 minutos
-  Lista de actores por apellido
-  Actores que aparecen en una película concreta
-  Agrupaciones por clasificación, categoría, duración, etc.
-
-📂 Todas las consultas están incluidas en el archivo:
-/ejercicio_2_sakila.sql
-
-**Tecnologías utilizadas**
-  
-
-📄 Estructura del repositorio
-├── ejercicio_1/
-│   ├── extraccion_api.py
-│   ├── crear_bd.sql / crear_bd.py
-│   ├── insertar_datos.sql / insertar_datos.py
-│   ├── consultas_sql_ej1.sql
-│   └── README_ej1.md
-│
-├── ejercicio_2/
-│   └── ejercicio_2_sakila.sql
-│
-└── README.md
-
-
-✔️ Estado del proyecto
-Ejercicio 2 — COMPLETADO
-Ejercicio 1 — EN PROGRESO (faltaría completar antes de la entrega)
-
-
-
-# 🎬 Proyecto de Data Analytics — Base de Datos de Películas
-
-[![Status](https://img.shields.io/badge/status-en%20progreso-yellow)](./)
-[![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
+[![Status](https://img.shields.io/badge/status-%20entregado-yellow)](./)
 [![Made with Python](https://img.shields.io/badge/made%20with-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![MySQL](https://img.shields.io/badge/database-MySQL-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![GitHub](https://img.shields.io/badge/version-1.0.0-lightgrey)](./)
-
+[![Last updated](https://img.shields.io/badge/última%20actualización-2025--12--04-brightgreen)](./)
 ---
 
 ## 📑 Tabla de contenidos
 
-- [Descripción](#descripción)
-- [Objetivos del proyecto](#objetivos-del-proyecto)
-- [Tecnologías utilizadas](#tecnologías-utilizadas)
-- [Estructura del repositorio](#estructura-del-repositorio)
-- [Ejercicio 1 — API + Base de datos](#ejercicio-1--api--base-de-datos)
-- [Ejercicio 2 — Base de datos Sakila](#ejercicio-2--base-de-datos-sakila)
-- [Cómo ejecutar el proyecto](#cómo-ejecutar-el-proyecto)
-- [Próximas mejoras](#próximas-mejoras)
-- [Autoría](#autoría)
+- [Descripción](#-descripción)
+- [Objetivos](#-objetivos)
+- [Ejercicio 1 — API + Base de Datos](#-ejercicio-1--api--base-de-datos)
+- [Ejercicio 2 — Base de datos Sakila](#-ejercicio-2--base-de-datos-sakila)
+- [Tecnologías utilizadas](#-tecnologías-utilizadas)
+- [Cómo ejecutar el proyecto](#-cómo-ejecutar-el-proyecto)
+- [Autoría](#-autoría)
 
 ---
-<img width="104" height="156" alt="Professional_code_RUTH SIN FONDO" src="https://github.com/user-attachments/assets/ee5f7c67-1167-4098-aae1-2e215979c0cb" />
-Evaluación realizada por RUTH PEREZ SEGOVIA, como parte del Bootcamp de Data Analytics — Adalab.
-Cualquier comentario o mejora es bienvenida.
 
 ## 📝 Descripción
 
-Este repositorio contiene la resolución de la evaluación final del Módulo 2 del Bootcamp de Data Analytics de Adalab.
-El ejercicio se compone de dos partes principales:
-    -Ejercicio 1: Extracción de datos desde una API, creación de una base de datos en MySQL e inserción de datos.
-    -Ejercicio 2: Resolución de consultas SQL utilizando la base de datos Sakila.
+Este repositorio contiene la resolución de la **evaluación final del Módulo 2 (Python + SQL)** del Bootcamp de Data Analytics de Adalab.  
 
+El proyecto está dividido en dos partes principales:
 
-## 🎯 Objetivos del proyecto
+1. **Extracción de datos desde una API y creación de una base de datos en MySQL.**  
+2. **Resolución de queries SQL utilizando la base de datos Sakila.**
 
-- Objetivo 1 del proyecto.
-- Objetivo 2 del proyecto.
-- Objetivo 3 del proyecto.
+<p align="center">
+  <img width="338" height="387"
+       src="https://github.com/user-attachments/assets/74d9f63f-1385-4bd5-93d0-8b3f4f517ada" />
+</p>
+
+---
+
+## 🎯 Objetivos
+
+- Realizar una extracción de datos mediante API (JSON).
+- Limpiar, transformar y almacenar datos en MySQL.
+- Dominar operaciones SQL:
+  - SELECT, INSERT, UPDATE, DELETE  
+  - JOINs, GROUP BY, HAVING  
+  - UNION / UNION ALL  
+  - Subconsultas
+- Conectar Python con MySQL (MySQL Connector / SQLAlchemy).
+- Resolver consultas usando la base de datos Sakila.
+
+---
+
+## 🧩 Ejercicio 1 — API + Base de Datos
+
+### 🔹 Fase 1 — Extracción de datos desde API
+
+- Endpoint proporcionado por Adalab:  
+  `https://beta.adalab.es/resources/apis/pelis/pelis.json`
+- Extracción de 100 películas.
+- Almacenamiento inicial en un DataFrame (`pandas`).
+
+### 🔹 Fase 2 — Creación de la base de datos
+
+Creación en MySQL (Workbench o Python) con las columnas:
+
+- `title`
+- `year`
+- `duration`
+- `genre`
+- `adult_content`
+
+### 🔹 Fase 3 — Limpieza e inserción de datos
+
+- Normalización del DataFrame.
+- Inserción en tabla MySQL mediante Python.
+
+### 🔹 Fase 4 — Consultas SQL realizadas
+
+- Películas > 120 min.  
+- Películas con subtítulos en español.  
+- Películas con contenido adulto.  
+- Película más antigua.  
+- Promedio de duración por género.  
+- Nº de películas por año.  
+- Año con más películas.  
+- Nº de películas por género.  
+- Búsqueda por palabra en el título.  
+
+---
+
+## 🎥 Ejercicio 2 — Base de datos Sakila
+
+Se resuelven todas las consultas del enunciado, incluyendo:
+
+- Selección de películas sin duplicados.  
+- Películas con clasificación **PG-13**.  
+- Películas con palabra clave en la descripción.  
+- Películas > 120 min.  
+- Listado de actores por apellido.  
+- Actores que participan en una película concreta.  
+- Agrupaciones por:
+  - clasificación  
+  - categoría  
+  - duración  
+  - cantidad de actores  
+  - etc.
+
+---
 
 ## 🛠 Tecnologías utilizadas
-- Python (Pandas, Requests, etc...para extracción y manipulación de datos).
-- MySQL y MySQL Workbench.
-- SQL (consultas y creación de tablas).
-- Git y GitHub.
 
-## 📂 Estructura del repositorio
+- **Python:** Pandas, Requests, MySQL Connector / SQLAlchemy.  
+- **MySQL** y **MySQL Workbench**.  
+- **SQL** (DDL, DML,  joins, subconsultas, agregaciones).  
+- **Git y GitHub**.
+
+---
+## ▶️ Cómo ejecutar el proyecto
+
+**Clonar el repositorio**
+
+git clone <URL-del-repo>
+cd bda-modulo-2-evaluacion-final-Ruthpsegovia
+
+---
+
+## 👩‍💻 Autoría
+
+Proyecto desarrollado por **Ruth Pérez Segovia**  
+Data Analytics Bootcamp — Adalab  
+
+- GitHub: [Ruthpsegovia](https://github.com/Ruthpsegovia)  
+- LinkedIn: [https://www.linkedin.com/in/ruthpsegovia/](https://www.linkedin.com/in/ruthpsegovia/)
+
 
