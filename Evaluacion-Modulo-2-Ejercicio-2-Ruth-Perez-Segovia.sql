@@ -81,3 +81,8 @@ UNION
 SELECT film.title
 FROM film
 WHERE film.description REGEXP 'cat';
+
+-- Encuentra el título de todas las películas que fueron lanzadas entre el año 2005 y 2010.
+SELECT title
+FROM film
+WHERE release_year BETWEEN 2005 AND 2010;
